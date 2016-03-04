@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="紫诺小鸡" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQz-OT-Sbp">
+                                <rect key="frame" x="0.0" y="92" width="600" height="508"/>
+                                <state key="normal" image="Icon-128"/>
+                                <connections>
+                                    <action selector="touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYA-mJ-AVf"/>
+                                    <action selector="touchUpButton:" destination="BYZ-38-t0r" eventType="touchDown" id="nCy-CG-9g2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgrand" translatesAutoresizingMaskIntoConstraints="NO" id="aoG-5h-e14">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddc-9K-BUl">
+                                <rect key="frame" x="535" y="28" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="6z2-NX-LUP"/>
+                                    <constraint firstAttribute="height" constant="22" id="WR4-nw-qbF"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changedefficultlevel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RPx-UP-caw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrB-fG-wdf">
+                                <rect key="frame" x="47" y="28" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="2WA-mv-2BP"/>
+                                    <constraint firstAttribute="width" constant="22" id="yey-5V-Cxu"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changepictures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1d-tR-F2Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QrB-fG-wdf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="4TO-xi-8IL"/>
+                            <constraint firstItem="aoG-5h-e14" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EkV-Qr-Rj5"/>
+                            <constraint firstAttribute="trailing" secondItem="OQz-OT-Sbp" secondAttribute="trailing" id="F3e-dx-FVn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OQz-OT-Sbp" secondAttribute="bottom" id="GM6-QW-tE1"/>
+                            <constraint firstItem="QrB-fG-wdf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="47" id="ONQ-P7-npW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aoG-5h-e14" secondAttribute="bottom" id="RuH-B7-hjL"/>
+                            <constraint firstItem="OQz-OT-Sbp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XDJ-kF-nG0"/>
+                            <constraint firstAttribute="trailing" secondItem="OQz-OT-Sbp" secondAttribute="trailing" id="YcC-MW-87j"/>
+                            <constraint firstAttribute="trailing" secondItem="Ddc-9K-BUl" secondAttribute="trailing" constant="43" id="aar-fS-U4Y"/>
+                            <constraint firstItem="OQz-OT-Sbp" firstAttribute="top" secondItem="Ddc-9K-BUl" secondAttribute="bottom" constant="42" id="d2F-i8-AaR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OQz-OT-Sbp" secondAttribute="bottom" id="oUX-IU-FvO"/>
+                            <constraint firstItem="aoG-5h-e14" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="p6y-p3-sUy"/>
+                            <constraint firstItem="OQz-OT-Sbp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qxt-Yj-8Tv"/>
+                            <constraint firstItem="Ddc-9K-BUl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wOb-zA-cmx"/>
+                            <constraint firstAttribute="trailing" secondItem="aoG-5h-e14" secondAttribute="trailing" id="wYL-gF-jEx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changpictures" destination="QrB-fG-wdf" id="7na-GN-mJ6"/>
+                        <outlet property="main" destination="aoG-5h-e14" id="aqD-wy-NDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="369"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-128" width="128" height="128"/>
+        <image name="backgrand" width="393" height="228"/>
+    </resources>
+</document>
